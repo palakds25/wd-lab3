@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>S.B. Jain College Scholarship Application Form</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#f4f4f4;
+}
+
+.container{
+width:650px;
+margin:auto;
+background:white;
+padding:30px;
+margin-top:40px;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+label{
+font-weight:bold;
+display:block;
+margin-top:12px;
+}
+
+input, textarea{
+width:100%;
+padding:8px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+.row{
+display:flex;
+gap:10px;
+}
+
+.row div{
+flex:1;
+}
+
+p{
+font-size:14px;
+margin-top:10px;
+}
+
+.checkbox{
+margin-top:5px;
+}
+
+.signature{
+height:60px;
+}
+
+button{
+background:#28a745;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+margin-top:20px;
+font-size:16px;
+border-radius:4px;
+cursor:pointer;
+}
+
+button:hover{
+background:#218838;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>S.B. Jain College<br>Scholarship Application Form</h2>
+
+<form>
+
+<label>Student Name</label>
+<div class="row">
+<div>
+<input type="text" placeholder="First Name">
+</div>
+
+<div>
+<input type="text" placeholder="Last Name">
+</div>
+</div>
+
+<label>Class / Grade</label>
+<input type="text">
+
+<label>Address</label>
+<input type="text" placeholder="Street Address">
+
+<input type="text" placeholder="Street Address Line 2">
+
+<div class="row">
+<div>
+<input type="text" placeholder="City">
+</div>
+
+<div>
+<input type="text" placeholder="State / Province">
+</div>
+</div>
+
+<input type="text" placeholder="Postal / Zip Code">
+
+<label>Parent / Guardian Email</label>
+<input type="email" placeholder="example@email.com">
+
+<label>Phone Number</label>
+<input type="tel" placeholder="000-000-0000">
+
+<p>
+I understand that this scholarship is available only to eligible
+students of S.B. Jain College and the information provided must
+be correct.
+</p>
+
+<div class="checkbox">
+<input type="checkbox"> Yes
+</div>
+
+<p>
+I understand that the deadline to submit the scholarship application
+and required documents must be followed. Late applications may not
+be accepted.
+</p>
+
+<div class="checkbox">
+<input type="checkbox"> Yes
+</div>
+
+<p>
+I confirm that all the information provided in this form is accurate
+and complete.
+</p>
+
+<div class="checkbox">
+<input type="checkbox"> Yes
+</div>
+
+<label>Parent Signature</label>
+<input class="signature" type="text" placeholder="Sign Here">
+
+<label>Student Signature</label>
+<input class="signature" type="text" placeholder="Sign Here">
+
+<label>Date</label>
+<input type="date">
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
