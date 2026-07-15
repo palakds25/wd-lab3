@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Webpage</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: #6a1b4d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #6a1b4d, #9c3d6a);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Welcome Section */
+.welcome {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Cards Section (Columns) */
+.cards {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Icons */
+.card i {
+    font-size: 30px;
+    color: #6a1b4d;
+    margin-bottom: 10px;
+}
+
+/* Solutions Section */
+.solutions {
+    text-align: center;
+    padding: 40px;
+}
+
+.solution-box {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.solution-box:hover {
+    transform: rotate(5deg);
+}
+
+/* Footer */
+footer {
+    background: #6a1b4d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer i {
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+footer i:hover {
+    color: yellow;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .cards {
+        column-count: 1;
+    }
+
+    .solution-box {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Palak's Responsive Website</h2>
+</header>
+
+<section class="hero">
+    <h1>Protecting Your Future</h1>
+    <p>Modern Responsive Web Design using CSS3</p>
+</section>
+
+<section class="welcome">
+    <h2>Welcome</h2>
+    <p>This webpage uses CSS3 features like columns, animations, icons and responsive design.</p>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <i class="fas fa-book"></i>
+        <h3>Glossary</h3>
+        <p>Learn important concepts easily.</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Analysis</h3>
+        <p>Detailed analysis and insights.</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Planning</h3>
+        <p>Plan your goals effectively.</p>
+    </div>
+</section>
+
+<section class="solutions">
+    <h2>Our Solutions</h2>
+
+    <div class="solution-box">
+        <i class="fas fa-user fa-2x"></i>
+        <h4>Business</h4>
+    </div>
+
+    <div class="solution-box">
+        <i class="fas fa-heart fa-2x"></i>
+        <h4>Personal</h4>
+    </div>
+
+    <div class="solution-box">
+        <i class="fas fa-briefcase-medical fa-2x"></i>
+        <h4>Professional</h4>
+    </div>
+</section>
+
+<footer>
+    <p>Follow Us</p>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+</footer>
+
+</body>
+</html>
